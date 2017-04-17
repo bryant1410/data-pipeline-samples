@@ -1,9 +1,9 @@
-#Data Pipeline  Load Tab Separated Files in S3 to Redshift if file exists
+# Data Pipeline  Load Tab Separated Files in S3 to Redshift if file exists
 
-##About the sample
+## About the sample
 This pipeline definition when imported would instruct Redshift to load two TSV files from given two S3 location, into two different Redshift Table. Two copy activities are independent, each will start once the input s3 file exists. Table insert mode is OVERWRITE_EXISTING.
 
-##Running this sample
+## Running this sample
 The pipeline requires the following user input point:
 
 1. Redshift connection info

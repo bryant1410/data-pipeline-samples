@@ -1,9 +1,9 @@
-#DynamoDB to CSV import
+# DynamoDB to CSV import
 
-##About the sample
+## About the sample
 The pipeline definition is used to import DynamoDB data to a CSV format.
 
-##Running the pipeline 
+## Running the pipeline 
 
 Example DynamoDB table with keys: id
 

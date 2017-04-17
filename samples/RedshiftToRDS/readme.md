@@ -1,4 +1,4 @@
-#Redshift To RDS Without RDS Table create Sample 
+# Redshift To RDS Without RDS Table create Sample 
 
 This sample demonstrates how you can use Data Pipeline to copy data from a Redshift table to a RDS table. The template assumes that the table is already created in RDS. To make this sample to work, you must ensure you have the following:
 
@@ -17,7 +17,7 @@ This sample demonstrates how you can use Data Pipeline to copy data from a Redsh
 
 You will need to provide the above information in the "put-pipeline-definition" command below.
 
-##Running this sample
+## Running this sample
 
 ```sh
  $> aws datapipeline create-pipeline --name redshift_to_rds_without_table_create --unique-id redshift_to_rds_without_table_create 
@@ -64,7 +64,7 @@ You will need to provide the above information in the "put-pipeline-definition" 
 #       @ResourceId_idL0Y_2015-11-06T23:52:04               2015-11-06T23:52:11      
 ```
 
-#Redshift To RDS with RDS Table create Sample
+# Redshift To RDS with RDS Table create Sample
 
 This sample demonstrates how you can use Data Pipeline to copy data from a Redshift table to a RDS table. The template assumes that the table is already created in RDS. To make this sample to work, you must ensure you have the following:
 
@@ -84,7 +84,7 @@ This sample demonstrates how you can use Data Pipeline to copy data from a Redsh
 
 You will need to provide the above information in the "put-pipeline-definition" command below.
 
-##Running this sample
+## Running this sample
 
 ```sh
  $> aws datapipeline create-pipeline --name redshift_to_rds_with_table_create --unique-id redshift_to_rds_with_table_create

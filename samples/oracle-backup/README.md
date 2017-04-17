@@ -28,7 +28,7 @@ It features usage of parameters and expressions for easy pipeline definition re-
     `aws datapipeline activate-pipeline --pipeline-id <pipeline-id>`
 
 
-##Parameters
+## Parameters
 
 myBackupLocation: S3 backup location (i.e. `s3://mybucket/backups/oracle`)
 

@@ -1,4 +1,4 @@
-#DynamoDBToRedshiftConvertDataUsingHive Sample 
+# DynamoDBToRedshiftConvertDataUsingHive Sample 
 
 This sample demonstrates how you can use Data Pipeline's HiveActivity and RedshiftCopyActivity to copy data from a DynamoDB table to a Redshift table while performing data conversion using Hive (for data transformation) and S3 (for staging).  This sample was motivated by a use case where one wishes to convert the data type of one column to another data type.  In this sample, we will be converting a column from binary to base64 string.  To make this sample to work, you must ensure you have the following:
 
@@ -14,7 +14,7 @@ We will use the [Handling Binary Type Attributes Using the AWS SDK for Java Docu
 
 The column mappings used in this sample are meant to match the table definition used in the above example.
 
-##Hive queries
+## Hive queries
 The following queries will be used to convert the ExtendedMessage column from binary to base64 string.
 ```sql
 # tempHiveTable will receive the data from DynamoDB as-is
@@ -38,7 +38,7 @@ INSERT OVERWRITE TABLE s3TempTable SELECT Id,ReplyDateTime,Message,base64(Extend
 
 You will need to provide the above information in the "put-pipeline-definition" command below.
 
-##Before running the sample
+## Before running the sample
 To simplify the example, the pipeline uses the following EMR cluster configuration:
 * Release label: emr-4.4.0
 * Master instance type: m3.xlarge
@@ -47,7 +47,7 @@ To simplify the example, the pipeline uses the following EMR cluster configurati
 
 Please feel free to modify this configuration to suite your needs.
 
-##Running this sample
+## Running this sample
 
 ```sh
 $> aws datapipeline create-pipeline --name data_conversion_using_hive --unique-id data_conversion_using_hive 
@@ -111,7 +111,7 @@ $> aws datapipeline list-runs --pipeline-id df-0554887H4KXKTY59MRJ
 #       @TableBackupActivity_2016-03-31T23:38:34            2016-03-31T23:38:38                     
 ```
 
-##Related documentation
+## Related documentation
 * [HiveActivity](http://docs.aws.amazon.com/datapipeline/latest/DeveloperGuide/dp-object-hiveactivity.html)
 * [RedshiftCopyActivity](https://docs.aws.amazon.com/datapipeline/latest/DeveloperGuide/dp-object-redshiftcopyactivity.html)
 

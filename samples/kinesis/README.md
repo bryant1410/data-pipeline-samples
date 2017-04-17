@@ -6,7 +6,7 @@ This sample sets up a Data Pipeline to run an analysis on a kinesis stream every
 
 # Running the sample
 
-##Setting up your resources
+## Setting up your resources
 
 The setup script will:
 - create a Kinesis stream named AccessLogStream
@@ -17,7 +17,7 @@ The setup script will:
 ```sh
  $> setup/setup-script.sh
 ```
-##Populating your stream
+## Populating your stream
 
 You can push sample data to your stream by running
 
@@ -25,7 +25,7 @@ You can push sample data to your stream by running
  $> setup/append-to-stream.sh
 ```
 
-##Setting up the pipeline
+## Setting up the pipeline
 
 The instructions at https://github.com/awslabs/data-pipeline-samples tell you how to create, setup, and activate a pipeline. 
 

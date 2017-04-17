@@ -1,9 +1,9 @@
-#DynamoDB to CSV export
+# DynamoDB to CSV export
 
-##About the sample
+## About the sample
 The pipeline definition is used for exporting DynamoDB data to a CSV format.
 
-##Running the pipeline 
+## Running the pipeline 
 
 Example DynamoDB table with keys: customer_id, income, demographics, financial
 

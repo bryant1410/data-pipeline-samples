@@ -10,7 +10,7 @@ It can be done in two different ways:
 2. Using the AWS Data Pipeline Console
 
 
-###Using the terminal
+### Using the terminal
 1. Download the diagnostics jar file: https://s3.amazonaws.com/data-pipeline-samples/diagnose-sample/Diagnose.jar
 
 2. Run the following command (The config option takes in the path and file name of your credentials.json file)
@@ -20,7 +20,7 @@ NOTE: If you are running it from an AWS CLI that has been configured with your c
 	`$> java -jar <path_to_jar>/Diagnose.jar`
 
 
-###Using the AWS Data Pipeline Console
+### Using the AWS Data Pipeline Console
 1. Download the pipeline definition json file:https://s3.amazonaws.com/data-pipeline-samples/diagnose-sample/diagnose_pipeline.json.
 
 3. Use the AWS Data Pipeline console to create a new pipeline and import the definition from the downloaded json file.

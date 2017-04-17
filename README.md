@@ -9,7 +9,7 @@ AWS Data Pipeline is a web service that you can use to automate the movement and
 
 
 # Running the samples
-##Setup
+## Setup
 1 Get the samples by cloning this repository. 
 ```sh
  $> git clone https://github.com/awslabs/data-pipeline-samples.git
@@ -39,11 +39,11 @@ When you are finished experimenting with the examples, deactivate the virtual en
  $> aws datapipeline create-default-roles 
 ```
 
-##Run the Hello World sample
+## Run the Hello World sample
 
 The hello world sample demonstrates a pipeline that creates an EC2 instance and runs `echo Hello World!`. It can be used as a reference template for executing arbitriy shell commands.  
 
-###Step 1
+### Step 1
 Create the pipelineId by calling the *aws data pipeline create-pipeline* command. We'll use this pipelineId to host the pipeline definition document and ultimately to run and monitor the pipeline. The commands in this section should be called from within the virtual environment that you created above.
 
 ```sh
@@ -59,7 +59,7 @@ You will receive a pipelineId like this.
 #   +-------------+--------------------------+
 ```
 
-###Step 2
+### Step 2
 Upload the helloworld.json sample pipeline definition by calling the *aws datapipeline put-pipeline-definition* command. This will upload and validate your pipeline definition. 
 
 ```sh
@@ -76,7 +76,7 @@ You will receive a validation messages like this
 #   |  errored  |  False  |
 #   +-----------+---------+
 ```
-###Step 3
+### Step 3
 Activate the pipeline by calling the *aws datapipeline activate-pipeline* command. This will cause the pipeline to start running on its defined schedule. 
 
 ```sh
@@ -100,7 +100,7 @@ You will receive status information on the pipeline.
 #          @ShellCommandActivity_HelloWorld_2015-07-19T22:48:  2015-07-19T22:48:34
 
 ```
-##Examine the contents of the sample pipeline definition 
+## Examine the contents of the sample pipeline definition 
 Let's look at the Hello world example pipeline located at samples/helloworld/helloworld.json. 
 
 ```json
@@ -175,13 +175,13 @@ Let's look at the Hello world example pipeline located at samples/helloworld/hel
 }
 ```
 
-##Check out the other samples
+## Check out the other samples
 This reposity contains a collection of Data Pipeline templates that should help you get started quickly. Browse the content of the /samples folder to discover what samples exist. Also, feel free to submit samples a pull requests.  
 
 
 
 
-##Disclaimer
+## Disclaimer
 The samples in this repository are meant to help users get started with Data Pipeline. They may not be sufficient for production environments. Users should carefully inspect samples before running them.
 
 _Use at your own risk._

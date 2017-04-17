@@ -1,4 +1,4 @@
-#RedshiftCopyActivityFromDynamoDBTable Sample 
+# RedshiftCopyActivityFromDynamoDBTable Sample 
 
 This sample demonstrates how you can use Data Pipeline's RedshiftCopyActivity to copy data from a DynamoDB table to a Redshift table.  This sample was motivated by a use case that requires the user to provide AWS credentials to access the DynamoDB table.  It is assumed that the owner of the DynamoDB table has granted the user read access to the table.  To make this sample to work, you must ensure you have the following:
 
@@ -12,7 +12,7 @@ This sample demonstrates how you can use Data Pipeline's RedshiftCopyActivity to
 
 You will need to provide the above information in the "put-pipeline-definition" command below.
 
-##Running this sample
+## Running this sample
 
 ```sh
  $> aws datapipeline create-pipeline --name redshift_copy_from_dynamodb_pipeline --unique-id redshift_copy_from_dynamodb_pipeline 
@@ -58,6 +58,6 @@ You will need to provide the above information in the "put-pipeline-definition" 
 #       @ResourceId_idL0Y_2015-11-06T23:52:04               2015-11-06T23:52:11      
 ```
 
-##Related documentation
+## Related documentation
 https://docs.aws.amazon.com/datapipeline/latest/DeveloperGuide/dp-object-redshiftcopyactivity.html
 
